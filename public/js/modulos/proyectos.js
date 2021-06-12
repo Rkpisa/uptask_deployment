@@ -26,10 +26,8 @@ if(btnEliminar){
                 const url = `${location.origin}/proyectos/${urlProyecto}`;
                 axios.delete(url, { params: {urlProyecto}})
                     .then(function(respuesta){
-                        console.log(respuesta)
+                        console.log(respuesta);
                         
-                        return;
-
                             Swal.fire(
                                 'Proyecto Eliminado!',
                                 respuesta.data,
